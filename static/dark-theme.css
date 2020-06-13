@@ -9,3 +9,10 @@
     --color-text: #f7f7f7;
     --color-text-secondary: #aaa;
 }
+
+a {
+    color: var(--color-text);
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}

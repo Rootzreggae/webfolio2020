@@ -55,18 +55,11 @@
 	background-color: transparent;
 	color: var(--color-text);
 	border: none;
-	transition: background-color 0.3s
+	
 }
 
-.nav--logo{
-	width: 11.5em;
-	height: 1.5em;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.nav--logo svg{
-	width: 20px;
+nav .nav--logo{ 
+  justify-self: start;
 }
 
 </style>
@@ -78,7 +71,10 @@
 </svelte:head>
 
 <nav>
+	<a href="/" class="nav--logo">
 	
+	<div>Nilson Gaspar</div>
+	</a>
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>

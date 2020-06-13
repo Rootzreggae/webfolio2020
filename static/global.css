@@ -58,6 +58,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     padding: 1rem 0;
+    transition: background-color 0.3s
 }
 
 footer,
@@ -135,7 +136,7 @@ nav {
     align-items: center;
     display: flex;
     font-weight: bold;
-    justify-content: space-between;
+    justify-content: end;
     margin-bottom: 7rem;
 }
 
@@ -251,7 +252,7 @@ sup {
 
 /* Links */
 a {
-    color: var(--color-secondary);
+    color: var(--color-text);
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
