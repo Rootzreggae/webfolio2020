@@ -58,10 +58,17 @@
 	
 }
 
-nav .nav--logo{ 
-  justify-self: start;
+nav ul{ 
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
 }
 
+nav .nav--logo{
+	display: flex;
+	justify-content: flex-start;
+	width: 20%;
+}
 </style>
 
 <svelte:head>
@@ -76,12 +83,12 @@ nav .nav--logo{
 	<div>Nilson Gaspar</div>
 	</a>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
+		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Portfolio</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Writing</a></li>
 	</ul>
 	<button class="toggle-dark-light" on:click={toggleTheme}>
 		{#if dark}
