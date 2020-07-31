@@ -30,11 +30,24 @@
 		margin: 1em auto;
 	}
 
+.gallery{
+	display: grid;
+}
+.item{
+	background-color: teal;
+	height: 1rem;
+}
+
+
+
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
 		}
 	}
+
+
+
 </style>
 
 <svelte:head>
@@ -51,3 +64,9 @@
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
 
+<div class="gallery">
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+</div>
