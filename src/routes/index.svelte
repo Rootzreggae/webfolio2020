@@ -4,7 +4,7 @@
 
 
 <style>
-	h1, figure, p {
+	/* h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -14,7 +14,7 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
-	}
+	} */
 
 	figure {
 		margin: 0 0 1em 0;
@@ -41,8 +41,12 @@
 
 
 	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
+		p {
+			font-size: 1.4rem;
+			
+			
+		font-weight: 300;
+		margin: 0 0 0.5em 0;
 		}
 	}
 
@@ -51,11 +55,17 @@
 </style>
 
 <svelte:head>
-	<title>N1L50N</title>
+	<title>Nilson Gaspar</title>
 	
 </svelte:head>
 
-<h1>Great success!</h1>
+<p>Nilson Gaspar - Product Designer. I enjoy solving problems through experimentation, compassion and a sense of humor.
+
+	I've been a Product Designer for a few years now.<br> Right now, I'm focused on how you can save money and resources with predictive maintenance and machine learning at Jungle.ai.
+	
+	Before all this, I led Design at Comparamais, and was part of Aptoide's design crew.
+	
+	<br>I grew up in Lisbon South Bay, make a lot of self deprecating jokes, and I'm notorious for being below average at singing. My hobbies range from reading about Design psychology, comic books and illustration.</p>
 
 <figure>
 	<img alt='Success Kid' src='successkid.jpg'>
