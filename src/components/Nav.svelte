@@ -69,6 +69,21 @@ nav .nav--logo{
 	justify-content: flex-start;
 	width: 20%;
 }
+
+@media screen and (min-width: 359px){
+	
+		.nav--logo > div{
+			display: none;
+		}
+
+		.toggle-dark-light{
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+
+
+}
 </style>
 
 <svelte:head>
