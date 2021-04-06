@@ -8,7 +8,9 @@
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
-		padding: 0 1em;
+		font-size: 1.5rem;
+		padding-right: 5vw;
+		padding-left: 5vw;
 	}
 
 	ul {
@@ -37,7 +39,7 @@
 		position: absolute;
 		content: '';
 		width: calc(100% - 1em);
-		height: 2px;
+		height: 6px;
 		background-color: rgb(255,62,0);
 		display: block;
 		bottom: -1px;
@@ -72,9 +74,7 @@ nav .nav--logo{
 
 @media screen and (min-width: 359px){
 	
-		.nav--logo > div{
-			display: none;
-		}
+	
 
 		.toggle-dark-light{
 			padding-left: 0;

@@ -21,6 +21,8 @@
     --width-card-medium: 460px;
     --width-card-wide: 800px;
     --width-content: 1080px;
+    --text--size-10: 6rem;
+    --text--leading-p-10: calc(var(--t--size-10) + 6px);
 }
 
 /*

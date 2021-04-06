@@ -30,6 +30,20 @@
 		margin: 1em auto;
 	}
 
+
+	.big-title {
+		font-size: 2.4rem;
+		font-family: 'Merriweather', serif;
+	}
+
+
+
+
+
+
+
+
+
 /* mansory articles gallery*/
 :global(img) { opacity: .9; transition: all .2s }
 :global(img):hover { opacity: 1; transform: scale(1.04) }
@@ -61,13 +75,9 @@
 	
 </svelte:head>
 
-<p>Nilson Gaspar - Product Designer. I enjoy solving problems through experimentation, compassion and a sense of humor.
-
-	I've been a Product Designer for a few years now.<br> Right now, I'm focused on how you can save money and resources with predictive maintenance and machine learning at Jungle.ai.
-	
-	Before all this, I led Design at Comparamais, and before that I was part of Aptoide's design crew.
-	
-	<br>I grew up in Lisbon South Bay, make a lot of self deprecating jokes, and I'm notorious for being below average at singing. My hobbies range from reading about Design psychology, comic books and illustration.</p>
+<p> 
+	<span class="big-title">Nilson is a human-centered practitioner who enjoys solving problems through experimentation, compassion and a sense of humor.</span>
+</p>
 
 <figure>
 	<img alt='Success Kid' src='successkid.jpg'>
