@@ -32,10 +32,14 @@
 
 .gallery{
 	display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 16px; 
 }
+
 .item{
-	background-color: teal;
-	height: 1rem;
+	background-color: tomato;
 }
 
 
@@ -75,8 +79,12 @@
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
 
 <div class="gallery">
-	<div class="item"></div>
-	<div class="item"></div>
+	<div class="item">
+		<img alt='Success Kid' src='successkid.jpg'>
+	</div>
+	<div class="item">
+		<img alt='Success Kid' src='successkid.jpg'>
+	</div>
 	<div class="item"></div>
 	<div class="item"></div>
 </div>
