@@ -1,5 +1,5 @@
 <script>
- 
+ import Gallery from 'svelte-image-gallery'
 </script>
 
 
@@ -30,17 +30,15 @@
 		margin: 1em auto;
 	}
 
-.gallery{
-	display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 16px; 
-}
+/* mansory articles gallery*/
+:global(img) { opacity: .9; transition: all .2s }
+:global(img):hover { opacity: 1; transform: scale(1.04) }
 
-.item{
-	background-color: tomato;
-}
+
+
+
+
+
 
 
 
@@ -78,13 +76,15 @@ grid-row-gap: 16px;
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
 
-<div class="gallery">
-	<div class="item">
-		<img alt='Success Kid' src='successkid.jpg'>
-	</div>
-	<div class="item">
-		<img alt='Success Kid' src='successkid.jpg'>
-	</div>
-	<div class="item"></div>
-	<div class="item"></div>
-</div>
+<Gallery gap="10" maxColumnWidth="200">
+	<img src="https://via.placeholder.com/180x200/1" alt="">
+	<img src="https://via.placeholder.com/200x280/1" alt="">
+	<img src="https://via.placeholder.com/250x200/1" alt="">
+	<img src="https://via.placeholder.com/140x310/1" alt="">
+	<!-- <img src="https://via.placeholder.com/280x300/1" alt="">
+	<img src="https://via.placeholder.com/220x100/1" alt="">
+	<img src="https://via.placeholder.com/180x150/1" alt="">
+	<img src="https://via.placeholder.com/210x180/1" alt="">
+	<img src="https://via.placeholder.com/210x200/1" alt=""> -->
+	
+</Gallery>

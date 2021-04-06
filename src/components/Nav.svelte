@@ -95,7 +95,7 @@ nav .nav--logo{
 <nav>
 	<a href="/" class="nav--logo">
 	
-	<div>Nilson Gaspar</div>
+	Nilson Gaspar
 	</a>
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Portfolio</a></li>
