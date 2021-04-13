@@ -78,32 +78,24 @@
 		font-weight: 600;
 	}
 
-	@media screen and (min-width: 359px) {
 
 
-		.toggle-dark-light {
-			padding-left: 0;
-			padding-right: 0;
-		}
 
-		nav ul {
-			width: 80%;
-			display: flex;
-			justify-content: flex-end;
-		}
 
-		nav .nav--logo {
-			display: flex;
-			justify-content: flex-start;
-			width: 20%;
-			font-size: .8rem;
-			font-family: 'Poppins', sans-serif;
-			font-weight: 600;
-		}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
-
-
-	}
 </style>
 
 <svelte:head>
