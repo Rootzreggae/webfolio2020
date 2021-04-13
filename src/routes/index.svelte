@@ -1,5 +1,5 @@
 <script>
- import Gallery from 'svelte-image-gallery'
+ 
 </script>
 
 
@@ -16,16 +16,13 @@
 		margin: 0 0 0.5em 0;
 	} */
 
-	figure {
-		margin: 0 0 1em 0;
-	}
 
-	img {
+/* 	img {
 		width: 100%;
 		max-width: 400px;
 		margin: 0 0 1em 0;
 	}
-
+ */
 	p {
 		margin: 1em auto;
 	}
@@ -38,15 +35,49 @@
 
 
 
+	.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
 
 
 
 
 
 
-/* mansory articles gallery*/
-:global(img) { opacity: .9; transition: all .2s }
-:global(img):hover { opacity: 1; transform: scale(1.04) }
 
 
 
@@ -54,18 +85,7 @@
 
 
 
-
-
-	@media (min-width: 480px) {
-		p {
-			font-size: 1.4rem;
-			
-			
-		font-weight: 300;
-		margin: 0 0 0.5em 0;
-		}
-	}
-
+	
 
 
 </style>
@@ -80,22 +100,35 @@
 </p>
 <p>Senior designer at <a href="https://ki-challengers.com/">KI Challenge.rs</a>. I'm a human centered Design practitioner, who enjoys solving problems through experimentation, compassion and a sense of humor. </p>
 
-<figure>
-	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
-
-<Gallery gap="10" maxColumnWidth="200">
-	<img src="https://via.placeholder.com/180x200/1" alt="">
-	<img src="https://via.placeholder.com/200x280/1" alt="">
-	<img src="https://via.placeholder.com/250x200/1" alt="">
-	<img src="https://via.placeholder.com/140x310/1" alt="">
-	<!-- <img src="https://via.placeholder.com/280x300/1" alt="">
-	<img src="https://via.placeholder.com/220x100/1" alt="">
-	<img src="https://via.placeholder.com/180x150/1" alt="">
-	<img src="https://via.placeholder.com/210x180/1" alt="">
-	<img src="https://via.placeholder.com/210x200/1" alt=""> -->
+<div class="grid-container">
+	<div class="grid-item tall" style="background-image: url('https://picsum.photos/id/65/900/900.jpg')"></div>
+	<div class="grid-item" style="
+			background-image: url('https://picsum.photos/id/881/900/900.jpg');
+		  "></div>
+  
+	<div class="grid-item wide" style="
+			background-image: url('https://picsum.photos/id/248/900/900.jpg');
+		  "></div>
+	<div class="grid-item" style="
+			background-image: url('https://picsum.photos/id/423/900/900.jpg');
+		  "></div>
+	<div class="grid-item" style="
+			background-image: url('https://picsum.photos/id/534/900/900.jpg');
+		  "></div>
+	<div class="grid-item" style="
+			background-image: url('https://picsum.photos/id/664/900/900.jpg');
+		  "></div>
+	<div class="grid-item" style="
+			background-image: url('https://picsum.photos/id/176/900/900.jpg');
+		  "></div>
+	<div class="grid-item" style="background-image: url('https://picsum.photos/id/73/900/900.jpg')"></div>
+	<div class="grid-item tall wide" style="
+			background-image: url('https://picsum.photos/id/806/900/900.jpg');
+		  "></div>
+	<div class="grid-item" style="
+			background-image: url('https://picsum.photos/id/535/900/900.jpg');
+		  "></div>
 	
-</Gallery>
+	
+  </div>
