@@ -32,7 +32,7 @@
 
 
 	.big-title {
-		font-size: 2.4rem;
+		font-size: 4rem;
 		font-family: 'Merriweather', serif;
 	}
 
@@ -76,8 +76,9 @@
 </svelte:head>
 
 <p> 
-	<span class="big-title">Nilson is a human-centered practitioner who enjoys solving problems through experimentation, compassion and a sense of humor.</span>
+	<span class="big-title">I'm Nilson Gaspar.</span>
 </p>
+<p>Senior designer at <a href="https://ki-challengers.com/">KI Challenge.rs</a>. I'm a human centered Design practitioner, who enjoys solving problems through experimentation, compassion and a sense of humor. </p>
 
 <figure>
 	<img alt='Success Kid' src='successkid.jpg'>
